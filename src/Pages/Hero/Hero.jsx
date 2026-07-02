@@ -25,7 +25,7 @@ const Hero = () => {
 
                     </motion.p>
                     <motion.h1
-                      className="mt-4 text-5xl font-bold lg:mt-8 sm:text-7xl xl:text-8xl text-nowrap"
+                      className="mt-4 text-5xl font-bold lg:mt-8 sm:text-7xl xl:text-8xl md:text-nowrap "
                       initial={{ opacity: 0, filter: 'blur(20px)', y: 20 }}
                       animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
                       transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.3 }}
@@ -62,13 +62,13 @@ const Hero = () => {
                 </motion.a>
 
                     <motion.p
-                      className="mt-6 text-mint"
+                      className="mt-6 text-lg"
                       initial={{ opacity: 0, filter: 'blur(20px)', y: 20 }}
                       animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
                       transition={{ duration: 0.8, ease: 'easeInOut', delay: 1.2 }}
                     >
                         
-                        <a href="#signup" title="Sign up for an account" className="text-lime-400 transition-all duration-200 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900" aria-label="Sign up for an account">Explore Menu?</a>
+                        <a href="#signup" title="Sign up for an account" className="text-lime-700 transition-all duration-200 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900" aria-label="Sign up for an account">Explore Menu?</a>
                     </motion.p>
                     </div>
 
