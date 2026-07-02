@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Hero/Hero'
 import Product from '../Components/Product'
 import { UpdateFollower } from 'react-mouse-follower'
+import Review from '../Components/Review'
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         >
           <Product/>  
         </UpdateFollower>
+        <Review/>
 
     </>
   )
