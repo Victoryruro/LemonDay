@@ -18,7 +18,7 @@ const Footer = () => {
 
                   {/* <!-- Footer Center: Useful Links --> */}
                   <div>
-                      <h3 className="text-lg font-semibold text-mint">Quick Links</h3>
+                      <h3 className="text-lg font-semibold text-lime-700">Quick Links</h3>
                       <ul className="mt-4 space-y-2">
                           <li><a href="#" className=" hover:text-gray-300 transition">Home</a></li>
                           <li><a href="#" className=" hover:text-gray-300 transition">About</a></li>
@@ -29,7 +29,7 @@ const Footer = () => {
                   </div>
 
                   <div>
-                      <h3 className="text-lg font-semibold text-mint">More Links</h3>
+                      <h3 className="text-lg font-semibold text-lime-700">More Links</h3>
                       <ul className="mt-4 space-y-2">
                           <li><a href="#" className=" hover:text-gray-300 transition">Privacy Policy</a></li>
                           
@@ -40,7 +40,7 @@ const Footer = () => {
                   </div>
                   {/* <!-- Footer Right: Social Media & Contact --> */}
                   <div>
-                      <h3 className="text-lg font-semibold text-mint">Follow Us</h3>
+                      <h3 className="text-lg font-semibold text-lime-700">Follow Us</h3>
                       <div className="mt-4 flex space-x-4">
                           <a href="#" className=" hover:text-gray-300 transition">
                               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
