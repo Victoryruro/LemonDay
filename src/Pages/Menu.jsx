@@ -67,18 +67,18 @@ const Menu = () => {
                     {product.description}
                     </p>
 
-                    <div className="flex items-center justify-between flex-row-reverse">
-                    <span className="inline-block bg-gray-100 text-gray-950 text-xs px-4 py-2 rounded-full">
-                        {product.flavor} • {product.size}
-                    </span>
+                    <div className="flex items-center  flex-row-reverse">
+                      <span className="inline-block bg-gray-100 text-gray-950 text-xs px-4 py-2 rounded-full text-nowrap">
+                          {product.flavor} • {product.size}
+                      </span>
 
-                    <button
-                        disabled={!product.inStock}
-                        className="bg-primary-500 hover:bg-primary-600 disabled:bg-gray-300 disabled:cursor-not-allowed text-black font-medium px-6 py-3 rounded-2xl flex items-center gap-2 transition-all active:scale-95"
-                    >
-                        {/* <ShoppingCart size={20} /> */}
-                        Order Now
-                    </button>
+                      <button
+                          disabled={!product.inStock}
+                          className="bg-primary-500 hover:bg-primary-600 disabled:bg-gray-300 disabled:cursor-not-allowed text-black font-medium px-6 py-3 rounded-2xl flex items-center gap-2 transition-all active:scale-95"
+                      >
+                          {/* <ShoppingCart size={20} /> */}
+                          Order Now
+                      </button>
                     </div>
                 </div> 
                                     
