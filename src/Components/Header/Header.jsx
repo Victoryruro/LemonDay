@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -17,11 +18,16 @@ const Header = () => {
 
             {/* <!-- Desktop Menu --> */}
             <div className="hidden md:flex space-x-8 text-white font-semibold">
-              <a href="#" className="hover:text-lime-400 transition text-gray-900 text-xl">Home</a>
-              <a href="#" className="hover:text-lime-400 transition text-gray-900 text-xl">Shop</a>
-              <a href="#" className="hover:text-lime-400 transition text-gray-900 text-xl">About</a>
-              <a href="#" className="hover:text-lime-400 transition text-gray-900 text-xl">Menu</a>
-              {/* <a href="#" className="hover:text-lime-400 transition">Contact</a> */}
+              
+              <Link to="/" className=" hover:text-lime-400 transition text-gray-900 text-xl">Home</Link>
+             
+              <Link to="/" className="hover:text-lime-400 transition text-gray-900 text-xl">Shop</Link>
+
+              <Link to="/" className="hover:text-lime-400 transition text-gray-900 text-xl">About</Link>
+              <Link to="/Menu" className="hover:text-lime-400 transition text-gray-900 text-xl">
+                Menu
+              </Link>
+              {/* <Link to="/Contact" className="hover:text-lime-400 transition">Contact</Link> */}
             </div>
 
             {/* <!-- Call to Action --> */}
@@ -50,11 +56,11 @@ const Header = () => {
         {/* <!-- Mobile Menu --> */}
         {isOpen && (
           <div id="mobile-menu" className="md:hidden px-4 pb-4 flex flex-col gap-7">
-              <a href="#" className="hover:text-lime-400 transition text-gray-900 text-xl">Home</a>
-              <a href="#" className="hover:text-lime-400 transition text-gray-900 text-xl">Shop</a>
-              <a href="#" className="hover:text-lime-400 transition text-gray-900 text-xl">About</a> 
-              <a href="#" className="hover:text-lime-400 transition text-gray-900 text-xl">Menu</a>
-            <a href="#" className="block mt-2 px-4 py-2 bg-linear-to-r from-primary-400 to-citrus text-gray-900 rounded-md text-xl text-center hover:from-citrus hover:to-primary-400 transition-all w-1/2 mx-auto font-semibold">Contact Us</a>
+              <Link to="/" className="hover:text-lime-400 transition text-gray-900 text-xl">Home</Link>
+              <Link to="/" className="hover:text-lime-400 transition text-gray-900 text-xl">Shop</Link>
+              <Link to="/" className="hover:text-lime-400 transition text-gray-900 text-xl">About</Link>
+              <Link to="/Menu" className="hover:text-lime-400 transition text-gray-900 text-xl">Menu</Link>
+            <Link to="/" className="block mt-2 px-4 py-2 bg-linear-to-r from-primary-400 to-citrus text-gray-900 rounded-md text-xl text-center hover:from-citrus hover:to-primary-400 transition-all w-1/2 mx-auto font-semibold">Contact Us</Link>
           </div>
         )}
       </nav>

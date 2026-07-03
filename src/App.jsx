@@ -7,6 +7,7 @@ import Footer from './Components/Footer'
 import { UpdateFollower } from 'react-mouse-follower'
 import icon from "./assets/LemonHero.png"
 import { motion } from 'motion/react'
+import Menu from "./Pages/Menu"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -39,6 +40,7 @@ function App() {
             <Header/>
             <Routes>
               <Route path="/" element={<Home/>} />
+              <Route path="/Menu" element={<Menu/>} />
             </Routes>
             <Footer/>
 

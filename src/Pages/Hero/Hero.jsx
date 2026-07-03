@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'motion/react'
 import "./Hero.css"
 import image from "../../assets/LemonHero.png"
+import { UpdateFollower } from 'react-mouse-follower'
 
 const Hero = () => {
   return (
@@ -24,15 +25,29 @@ const Hero = () => {
                         Delivered Fresh
 
                     </motion.p>
-                    <motion.h1
-                      className="mt-4 text-5xl font-bold lg:mt-8 sm:text-7xl xl:text-8xl md:text-nowrap "
-                      initial={{ opacity: 0, filter: 'blur(20px)', y: 20 }}
-                      animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
-                      transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.3 }}
-                    >
-                        Premium Lemonade <br /> Served
+                    <UpdateFollower
+                       mouseOptions={
+                        {
+                          // backgroundColor:'white',
+                          zIndex:9999,
+                          followSpeed:2.5,
+                          scale:5,
+                          mixBlendMode:"color-dodge",
 
-                    </motion.h1>
+                          
+                        } }  
+                    >
+                      <motion.h1
+                        className="mt-4 text-5xl font-bold lg:mt-8 sm:text-7xl xl:text-8xl md:text-nowrap "
+                        initial={{ opacity: 0, filter: 'blur(20px)', y: 20 }}
+                        animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
+                        transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.3 }}
+                      >
+                          Premium Lemonade <br /> Served
+
+                      </motion.h1>
+                    </UpdateFollower>
+
 <motion.p
                   className="mt-4 text-lg lg:mt-8 sm:text-xl text-gray-700 font-medium"
                   initial={{ opacity: 0, filter: 'blur(20px)', y: 20 }}
