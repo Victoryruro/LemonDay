@@ -67,7 +67,7 @@ const Menu = () => {
                     {product.description}
                     </p>
 
-                    <div className="flex items-center  flex-row-reverse">
+                    <div className="flex items-center justify-around flex-row-reverse">
                       <span className="inline-block bg-gray-100 text-gray-950 text-xs px-4 py-2 rounded-full text-nowrap">
                           {product.flavor} • {product.size}
                       </span>
