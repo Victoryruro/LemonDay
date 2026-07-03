@@ -1,14 +1,16 @@
-import { useState } from 'react'
+import { useState, lazy, Suspense } from 'react'
 import './App.css'
 import Header from './Components/Header/Header'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './Pages/Home'
 import Footer from './Components/Footer'
 import { UpdateFollower } from 'react-mouse-follower'
 import icon from "./assets/LemonHero.png"
 import { motion } from 'motion/react'
-import Menu from "./Pages/Menu"
-import About from './Pages/About'
+
+// Lazy load pages to reduce initial bundle size
+const Home = lazy(() => import('./Pages/Home'))
+const Menu = lazy(() => import('./Pages/Menu'))
+const About = lazy(() => import('./Pages/About'))
 
 function App() {
   const [count, setCount] = useState(0)
@@ -39,12 +41,13 @@ function App() {
             }
           >
             <Header/>
-            <Routes>
-              <Route path="/" element={<Home/>} />
-              
-              <Route path="/Menu" element={<Menu/>} />
-              <Route path="/About" element={<About/>} />
-            </Routes>
+            <Suspense fallback={<div className='flex justify-center items-center min-h-screen'>Loading...</div>}>
+              <Routes>
+                <Route path="/" element={<Home/>} />
+                <Route path="/Menu" element={<Menu/>} />
+                <Route path="/About" element={<About/>} />
+              </Routes>
+            </Suspense>
             <Footer/>
 
           </UpdateFollower>
