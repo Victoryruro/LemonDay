@@ -7,7 +7,7 @@ import { UpdateFollower } from 'react-mouse-follower'
 const Hero = () => {
   return (
     <>
-        <div className=" overflow-hidden">
+        <div className=" overflow-hidden" id='hero'>
             <section className="relative py-16 sm:py-24 lg:py-32">
                 <div className="absolute inset-0 z-0">
                 <div className="h-full w-full bg-cover bg-center opacity-50" id='Hero-back' ></div>

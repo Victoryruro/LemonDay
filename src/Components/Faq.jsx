@@ -3,7 +3,7 @@ import React from 'react'
 const Faq = () => {
   return (
     <>
-        <div className="space-y-4 p-6 max-w-3xl mx-auto text-center">
+        <div id="Faq" className="space-y-4 p-6 max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl p-3.5 ">Frequently Asked Questions</h1>
             <details className="group [&amp;_summary::-webkit-details-marker]:hidden bg-primary-50" open="" >
                 <summary className="flex items-center justify-between gap-1.5 rounded-md border border-gray-100  p-6 text-gray-900 dark:border-gray-700 dark:bg-gray-800 dark:text-white">

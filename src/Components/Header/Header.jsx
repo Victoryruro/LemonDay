@@ -19,7 +19,7 @@ const Header = () => {
             {/* <!-- Desktop Menu --> */}
             <div className="hidden md:flex space-x-8 text-white font-semibold">
               
-              <Link to="/" className=" hover:text-lime-400 transition text-gray-900 text-xl">Home</Link>
+              <Link to="/#hero" className=" hover:text-lime-400 transition text-gray-900 text-xl">Home</Link>
              
               <Link to="/About#shop" className="hover:text-lime-400 transition text-gray-900 text-xl">Shop</Link>
 
@@ -56,7 +56,7 @@ const Header = () => {
         {/* <!-- Mobile Menu --> */}
         {isOpen && (
           <div id="mobile-menu" className="md:hidden px-4 pb-4 flex flex-col gap-7">
-              <Link to="/" className="hover:text-lime-400 transition text-gray-900 text-xl">Home</Link>
+              <Link to="/#hero" className="hover:text-lime-400 transition text-gray-900 text-xl">Home</Link>
               <Link to="/About#shop" className="hover:text-lime-400 transition text-gray-900 text-xl">Shop</Link>
               <Link to="/About#about" className="hover:text-lime-400 transition text-gray-900 text-xl">About</Link>
               <Link to="/Menu" className="hover:text-lime-400 transition text-gray-900 text-xl">Menu</Link>

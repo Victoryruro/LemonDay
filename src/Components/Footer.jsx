@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -20,22 +21,21 @@ const Footer = () => {
                   <div>
                       <h3 className="text-lg font-semibold text-lime-700">Quick Links</h3>
                       <ul className="mt-4 space-y-2">
-                          <li><a href="#" className=" hover:text-gray-300 transition">Home</a></li>
-                          <li><a href="#" className=" hover:text-gray-300 transition">About</a></li>
-                          <li><a href="#" className=" hover:text-gray-300 transition">Shop</a></li>
-                          <li><a href="#" className=" hover:text-gray-300 transition">Menu</a></li>
-                          <li><a href="#" className=" hover:text-gray-300 transition">Contact</a></li>
+                          <li><Link to="/#hero" className=" hover:text-gray-300 transition">Home</Link></li>
+                          <li><Link to="/About#about" className=" hover:text-gray-300 transition">About</Link></li>
+                          <li><Link to="/About#shop" className=" hover:text-gray-300 transition">Shop</Link></li>
+                          <li><Link to="/Menu" className=" hover:text-gray-300 transition">Menu</Link></li>
+                          <li><Link to="/About#contact" className=" hover:text-gray-300 transition">Contact</Link></li>
                       </ul>
                   </div>
 
                   <div>
                       <h3 className="text-lg font-semibold text-lime-700">More Links</h3>
                       <ul className="mt-4 space-y-2">
-                          <li><a href="#" className=" hover:text-gray-300 transition">Privacy Policy</a></li>
-                          
-                          <li><a href="#" className=" hover:text-gray-300 transition">Help Center</a></li>
-                          <li><a href="#" className=" hover:text-gray-300 transition">FAQ</a></li>
-                          <li><a href="#" className=" hover:text-gray-300 transition">Review</a></li>
+                          <li><Link to="/" className=" hover:text-gray-300 transition">Privacy Policy</Link></li>
+                          <li><Link to="/" className=" hover:text-gray-300 transition">Help Center</Link></li>
+                          <li><Link to="/#Faq" className=" hover:text-gray-300 transition">FAQ</Link></li>
+                          <li><Link to="/#Review" className=" hover:text-gray-300 transition">Review</Link></li>
                       </ul>
                   </div>
                   {/* <!-- Footer Right: Social Media & Contact --> */}
