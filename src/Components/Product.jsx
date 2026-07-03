@@ -1,7 +1,7 @@
 import React from 'react'
-import p1 from "../assets/Product/Lemonp1.jpg"
-import p2 from "../assets/Product/Lemonp2.jpg"
-import p3 from "../assets/Product/Lemonp3.jpg"
+import p1 from "../assets/Product/LemonP1.jpg"
+import p2 from "../assets/Product/LemonP2.jpg"
+import p3 from "../assets/Product/LemonP3.jpg"
 import p4 from "../assets/Product/Strawberry.jpg"
 
 const productsList = [
