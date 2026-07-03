@@ -8,6 +8,7 @@ import { UpdateFollower } from 'react-mouse-follower'
 import icon from "./assets/LemonHero.png"
 import { motion } from 'motion/react'
 import Menu from "./Pages/Menu"
+import About from './Pages/About'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -40,7 +41,9 @@ function App() {
             <Header/>
             <Routes>
               <Route path="/" element={<Home/>} />
+              
               <Route path="/Menu" element={<Menu/>} />
+              <Route path="/About" element={<About/>} />
             </Routes>
             <Footer/>
 

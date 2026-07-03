@@ -21,9 +21,9 @@ const Header = () => {
               
               <Link to="/" className=" hover:text-lime-400 transition text-gray-900 text-xl">Home</Link>
              
-              <Link to="/" className="hover:text-lime-400 transition text-gray-900 text-xl">Shop</Link>
+              <Link to="/About#shop" className="hover:text-lime-400 transition text-gray-900 text-xl">Shop</Link>
 
-              <Link to="/" className="hover:text-lime-400 transition text-gray-900 text-xl">About</Link>
+              <Link to="/About#about" className="hover:text-lime-400 transition text-gray-900 text-xl">About</Link>
               <Link to="/Menu" className="hover:text-lime-400 transition text-gray-900 text-xl">
                 Menu
               </Link>
@@ -32,9 +32,9 @@ const Header = () => {
 
             {/* <!-- Call to Action --> */}
             <div className="hidden md:block">
-              <a href="#" className="px-4 py-2 bg-linear-to-r from-primary-400 to-citrus rounded-md text-gray-900 font-semibold text-xl hover:from-citrus hover:to-primary-400 transition-all">
+              <Link to="/About#contact" className="px-4 py-2 bg-linear-to-r from-primary-400 to-citrus rounded-md text-gray-900 font-semibold text-xl hover:from-citrus hover:to-primary-400 transition-all">
                 Contact Us
-              </a>
+              </Link>
             </div>
 
             {/* <!-- Mobile Menu Button --> */}
@@ -57,10 +57,10 @@ const Header = () => {
         {isOpen && (
           <div id="mobile-menu" className="md:hidden px-4 pb-4 flex flex-col gap-7">
               <Link to="/" className="hover:text-lime-400 transition text-gray-900 text-xl">Home</Link>
-              <Link to="/" className="hover:text-lime-400 transition text-gray-900 text-xl">Shop</Link>
-              <Link to="/" className="hover:text-lime-400 transition text-gray-900 text-xl">About</Link>
+              <Link to="/About#shop" className="hover:text-lime-400 transition text-gray-900 text-xl">Shop</Link>
+              <Link to="/About#about" className="hover:text-lime-400 transition text-gray-900 text-xl">About</Link>
               <Link to="/Menu" className="hover:text-lime-400 transition text-gray-900 text-xl">Menu</Link>
-            <Link to="/" className="block mt-2 px-4 py-2 bg-linear-to-r from-primary-400 to-citrus text-gray-900 rounded-md text-xl text-center hover:from-citrus hover:to-primary-400 transition-all w-1/2 mx-auto font-semibold">Contact Us</Link>
+            <Link to="/About#contact" className="block mt-2 px-4 py-2 bg-linear-to-r from-primary-400 to-citrus text-gray-900 rounded-md text-xl text-center hover:from-citrus hover:to-primary-400 transition-all w-1/2 mx-auto font-semibold">Contact Us</Link>
           </div>
         )}
       </nav>
