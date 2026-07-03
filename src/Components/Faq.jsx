@@ -37,7 +37,7 @@ const Faq = () => {
                 </svg>
                 </summary>
 
-                <p className="px-4 pt-4 text-gray-900 dark:text-white p-12">
+                <p className="px-4 pt-4 text-gray-900  p-12">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in,
                 recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo
                 consequuntur distinctio corporis earum similique!
