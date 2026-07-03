@@ -74,7 +74,7 @@ const Menu = () => {
 
                       <button
                           disabled={!product.inStock}
-                          className="bg-primary-500 hover:bg-primary-600 disabled:bg-gray-300 disabled:cursor-not-allowed text-black font-medium px-6 py-3 rounded-2xl flex items-center gap-2 transition-all active:scale-95"
+                          className="bg-primary-500 hover:bg-primary-600 disabled:bg-gray-300 disabled:cursor-not-allowed text-nowrap text-black font-medium px-6 py-3 rounded-2xl flex items-center gap-2 transition-all active:scale-95"
                       >
                           {/* <ShoppingCart size={20} /> */}
                           Order Now
